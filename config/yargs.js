@@ -12,13 +12,15 @@ const argv = require('yargs')
                         alias: 'listar',
                         type: 'boolean',
                         demandOption: false,
-                        describe: 'Muestra la tabla en consola'
+                        describe: 'Muestra la tabla en consola',
+                        default: false
                     },
                     'h': {
                         alias: 'hasta',
                         type: 'number',
                         demandOption: false,
-                        describe: 'Es el limite hasta donde se quiere multiplicar'
+                        describe: 'Es el limite hasta donde se quiere multiplicar',
+                        default: 10
                     }
                 })
                 .check((argv, options) => {
